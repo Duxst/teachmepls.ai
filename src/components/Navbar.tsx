@@ -14,21 +14,21 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-white shadow-lg">
+    <nav className="bg-white border-b border-gray-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex">
-            <div className="flex-shrink-0 flex items-center">
-              <Link href="/" className="text-2xl font-bold text-indigo-600">
+        <div className="flex justify-between h-20 items-center">
+          <div className="flex items-center">
+            <div className="flex-shrink-0 flex items-center mr-4">
+              <Link href="/" className="text-3xl font-extrabold text-black font-space-grotesk tracking-tight">
                 Savant
               </Link>
             </div>
-            <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
+            <div className="hidden sm:ml-6 sm:flex sm:space-x-10">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-indigo-600"
+                  className="uppercase font-bold text-black hover:text-gray-700 tracking-wide text-base font-manrope"
                 >
                   {item.name}
                 </Link>
@@ -66,7 +66,7 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className="block pl-3 pr-4 py-2 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+                className="block pl-3 pr-4 py-2 text-base font-medium text-blue-400 hover:text-blue-500"
               >
                 {item.name}
               </Link>
